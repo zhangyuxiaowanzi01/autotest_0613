@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css基础选择器</title>
+    <style>
+        /*后代选择器： E1 E2   E2是E1的后代标签*/
+        #div1 span{
+            color:red
+        }
+        #div1 u{
+            color:gray
+        }
+
+        /*子元素选择器: E1 > E2  E2就是E1的子标签*/
+        #div2 > span{
+            color: blue;
+        }
+        /*并集选择器: E1, E2, E3, ...*/
+        p.p1, span.span1, b{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+      ○ 后代选择器
+      ○ 子元素选择器
+      ○ 并集选择器
+    -->
+    <div id="div1">
+        <p>
+            <span>span1</span>
+            <u>u标签</u>
+        </p>
+    </div>
+    =============================
+    <div id="div2">
+        <span>span3</span>
+        <p>
+            <span>span4</span>
+        </p>
+    </div>
+    <span>span2</span>
+
+    <p class="p1">这是一个段落</p>
+    <span class="span1">span5</span>
+    <b>b标签</b>
+</body>
+</html>

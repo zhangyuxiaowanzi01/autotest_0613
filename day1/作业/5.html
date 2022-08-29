@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第5题</title>
+</head>
+<body>
+    <script>
+        // （选做） 封装函数输出n行的三角形
+        /*
+          *
+          ***
+          *****
+          *******
+        */
+        for(var i=1;i<=4*2;i++){
+            if (i % 2 != 0){
+                for(var j=1;j<=i;j++){
+                    document.write('* ')
+                }
+                document.write('<br/>')
+            }
+        }
+
+
+       for(var i=1;i<=5*2;i+=2){
+            for(var j=1;j<=i;j++){
+                document.write('* ')
+            }
+            document.write('<br/>')
+       }
+    </script>
+</body>
+</html>
