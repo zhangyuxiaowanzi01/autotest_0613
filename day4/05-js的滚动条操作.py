@@ -24,7 +24,6 @@ time.sleep(3)
 js2 = 'window.scrollTo(0, 0)'
 driver.execute_script(js2)
 
-
 # 退出浏览器
 time.sleep(10)
 driver.quit()
