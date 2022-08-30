@@ -27,6 +27,22 @@ driver.switch_to.frame(inner)
 inner_h3 = driver.find_element(By.ID, 'inner_h3')
 print(inner_h3.get_attribute('outerHTML'))
 
+# <iframe id="f2">
+driver.switch_to.frame('f2')
+time.sleep(2)
+print(driver.find_element(By.ID, 'p1').get_attribute('outerHTML'))
+
+
+# TODO 切换到父级frame
+driver.switch_to.parent_frame()
+print(driver.find_element(By.ID, 'inner_h3').get_attribute('outerHTML'))
+
+
+# TODO 切换到主页面
+# 说明:不管当前在哪个frame, 使用这个方法都会切换到主页面
+driver.switch_to.default_content()
+print(driver.find_element(By.TAG_NAME, 'h3').get_attribute('outerHTML'))
+
 # 退出浏览器
 time.sleep(2)
 driver.quit()
