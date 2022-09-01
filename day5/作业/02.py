@@ -17,7 +17,7 @@ time.sleep(2)
 driver.find_element(By.NAME, 'email').send_keys('itsourcetest')
 # 定位密码输入框，输入密码
 time.sleep(2)
-driver.find_element(By.NAME, 'password').send_keys('Itsource123.')
+driver.find_element(By.NAME, 'password').send_keys('********')
 # 定位登录按钮，  点击登录
 time.sleep(2)
 driver.find_element(By.ID, 'dologin').click()
