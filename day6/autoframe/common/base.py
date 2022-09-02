@@ -7,9 +7,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
 
-# 显示等待定位 + EC.定位标签的方法
-
-
 class Base:
     """
     selenium的二次封装，封装了selenium的基础方法，供page包下的类继承使用
