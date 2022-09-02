@@ -1,6 +1,4 @@
-import time
-
-from base import webdriver, By
+from base import webdriver, By, time
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
