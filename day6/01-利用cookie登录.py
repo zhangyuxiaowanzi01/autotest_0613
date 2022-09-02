@@ -1,4 +1,4 @@
-from base import webdriver, By, time
+from base import webdriver, time
 
 # 打开浏览器， 请求目标网址
 driver = webdriver.Chrome()
