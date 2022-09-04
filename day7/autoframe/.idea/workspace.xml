@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ab14046-6a5f-460f-9a46-f9cf34ca030a" name="Changes" comment="编写百度首页的page模块">
-      <change afterPath="$PROJECT_DIR$/../01-数据操作.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../data/lj_data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../data/sales.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../data/user_info.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9ab14046-6a5f-460f-9a46-f9cf34ca030a" name="Changes" comment="编写百度首页的page模块" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
