@@ -7,8 +7,8 @@ df = pd.read_csv('data/lj_data.csv')
 # TODO df.loc   根据行、列的标签值查询
 # df.loc[行标签，列标签].values
 """
-print(df.loc[0, '区域'].values)
-print(df.loc[1, '区域'].values)
+print(df.loc[0, '区域'])
+print(df.loc[1, '区域'])
 print(df.loc[1, ['区域', '地址']].values)
 print(df.loc[1].values)  # 获取行标签为1的数据
 
