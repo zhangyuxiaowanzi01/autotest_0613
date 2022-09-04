@@ -7,20 +7,26 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
 
+# 获取driver对象
+def get_driver(browser='chrome'):
+    # 打开浏览器，返回driver
+    if browser == 'chrome':
+        return webdriver.Chrome()
+    elif browser == 'firefox':
+        return webdriver.Firefox()
+    else:
+        print('不支持的浏览器')
+
+
 class Base:
     """
     selenium的二次封装，封装了selenium的基础方法，供page包下的类继承使用
     """
 
-    def __init__(self, browser):
-        # 打开浏览器，设置driver对象
-        if browser == 'chrome':
-            self.driver = webdriver.Chrome()
-        elif browser == 'firefox':
-            self.driver = webdriver.Firefox()
-        else:
-            print('不支持的浏览器')
-            self.driver = None
+    def __init__(self, driver):
+        # 设置driver
+        self.driver = driver
+        self.driver.maximize_window()  # 浏览器窗口最大化
 
     def get(self, url):
         # 请求目标网址
@@ -72,6 +78,10 @@ class Base:
         if element:
             element.click()
 
+    def implicitly_wait(self, seconds=3):
+        # 隐式等待
+        self.driver.implicitly_wait(seconds)
+
     def quit(self, seconds=0):
         # 退出浏览器
         time.sleep(seconds)
@@ -79,7 +89,9 @@ class Base:
 
 
 if __name__ == '__main__':
-    base = Base('chrome')
+    driver_obj = get_driver()
+
+    base = Base(driver_obj)
     base.get('https://www.baidu.com')
 
     # 搜索框输入天气预报
