@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ab14046-6a5f-460f-9a46-f9cf34ca030a" name="Changes" comment="编写百度首页的page模块">
-      <change afterPath="$PROJECT_DIR$/../02-数据读取.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-数据操作.py" beforeDir="false" afterPath="$PROJECT_DIR$/../01-数据操作.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-数据读取-未讲预习.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/index_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/index_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_operation-数据操作类封装-未讲预习.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-数据读取.py" beforeDir="false" afterPath="$PROJECT_DIR$/../02-数据读取.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -38,7 +38,6 @@ pprint(df.iloc[[1, 2, 3]].values.tolist())
 # [{}, {}, {}, ...]
 # print(df.index.values)  # 获取数据的行索引
 
-
 list1 = []
 for i in df.index.values:
     list1.append(df.iloc[i].to_dict())
