@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ab14046-6a5f-460f-9a46-f9cf34ca030a" name="Changes" comment="数据操作类封装">
+      <change afterPath="$PROJECT_DIR$/../03-为什么使用unittest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/data_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/data_operation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +133,7 @@
       <workItem from="1662106712074" duration="5145000" />
       <workItem from="1662215486909" duration="1876000" />
       <workItem from="1662254990924" duration="2426000" />
-      <workItem from="1662258765418" duration="5268000" />
+      <workItem from="1662258765418" duration="8521000" />
     </task>
     <task id="LOCAL-00001" summary="框架初始化和common包下的base模块编写">
       <created>1662109975827</created>
@@ -184,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662277317795</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="数据操作类封装">
+      <created>1662277370033</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662277370033</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
