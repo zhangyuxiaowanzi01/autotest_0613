@@ -2,8 +2,8 @@
 数据操作类， 用来读取测试数据
 类名：
     init：初始化文件读取  data
-    list: data.iloc|data.loc提取数据 转化为 列表
-    dict: data.iloc|data.loc提取数据 转化为 字典
+    get_data_to_list: 提取数据转化为列表
+    get_data_to_dict(self): 提取数据转化为字典
 """
 import pandas as pd
 import os
