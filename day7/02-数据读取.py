@@ -7,8 +7,8 @@ df = pd.read_csv('data/lj_data.csv')
 # TODO df.loc   根据行、列的标签值查询
 # df.loc[行标签，列标签].values
 """
-print(df.loc[0, '区域'])
-print(df.loc[1, '区域'])
+print(df.loc[0, '区域'].values)
+print(df.loc[1, '区域'].values)
 print(df.loc[1, ['区域', '地址']].values)
 print(df.loc[1].values)  # 获取行标签为1的数据
 
@@ -23,7 +23,7 @@ print(df.loc[[1, 3, 5], ['区域', '标题', '价格']])
 # TODO df.iloc 根据行、列的数字位置查询，从零开始
 # df.iloc[行索引，列索引]   获取单行
 """
-print(df.iloc[1, 0])
+print(df.iloc[1, 0].values)
 print(df.iloc[1, [1, 2, 3]].values)
 
 # df.iloc[[行索引1， 行索引2， ...], [列索引1， 列索引2, ...]] 获取多行多列
