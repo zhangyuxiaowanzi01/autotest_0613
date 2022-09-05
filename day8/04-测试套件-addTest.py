@@ -19,6 +19,7 @@ class Demo2TestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     # 普通执行方式
+    # 会把当前模块中的所有测试用例方法都收集执行
     # unittest.main()
 
     # TODO suite测试套件
@@ -30,7 +31,8 @@ if __name__ == '__main__':
     suite.addTest(Demo1TestCase('test01'))
     suite.addTest(Demo2TestCase('test_a'))
 
-    # TODO 执行器
+    # TODO 执行器执行方式
+    # 只执行套件中收集的测试用例方法
     # 创建执行器对象
     runner = unittest.TextTestRunner(verbosity=2)
     # 执行操作, 传入测试套件
