@@ -11,7 +11,7 @@ loader2 = loader.loadTestsFromTestCase(test_demo2.Demo2TestCase)
 """
 
 # TODO loader对象第二种形式
-
+# defaultTestLoader = unittest.TestLoader()
 # 参数：测试类
 loader1 = unittest.defaultTestLoader.loadTestsFromTestCase(test_demo1.Demo1TestCase)
 loader2 = unittest.defaultTestLoader.loadTestsFromTestCase(test_demo2.Demo2TestCase)
