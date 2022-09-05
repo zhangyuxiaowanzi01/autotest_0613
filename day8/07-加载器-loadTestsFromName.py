@@ -9,15 +9,16 @@ loader.loadTestsFromName(str)       通过测试模块名|类名|方法名加载
   ○ 模块名.类名.方法名
 """
 # TODO 通过模块名加载测试方法
-# loader = unittest.defaultTestLoader.loadTestsFromName('test_cases.test_demo1')
+defaultLoader = unittest.defaultTestLoader
+# loader = defaultLoader.loadTestsFromName('test_cases.test_demo1')
 
 # TODO 通过类名加载测试方法
-# loader1 = unittest.defaultTestLoader.loadTestsFromName('test_cases.test_demo1.Demo1TestCase')
-# loader2 = unittest.defaultTestLoader.loadTestsFromName('test_cases.test_demo2.Demo2TestCase')
+# loader1 = defaultLoader.loadTestsFromName('test_cases.test_demo1.Demo1TestCase')
+# loader2 = defaultLoader.loadTestsFromName('test_cases.test_demo2.Demo2TestCase')
 
 # TODO 通过方法名加载测试方法
-loader1 = unittest.defaultTestLoader.loadTestsFromName('test_cases.test_demo1.Demo1TestCase.test01')
-loader2 = unittest.defaultTestLoader.loadTestsFromName('test_cases.test_demo2.Demo2TestCase.test_b')
+loader1 = defaultLoader.loadTestsFromName('test_cases.test_demo1.Demo1TestCase.test01')
+loader2 = defaultLoader.loadTestsFromName('test_cases.test_demo2.Demo2TestCase.test_b')
 
 # 创建测试套件
 suite = unittest.TestSuite()
