@@ -10,12 +10,19 @@ from selenium.common.exceptions import TimeoutException
 # 获取driver对象
 def get_driver(browser='chrome'):
     # 打开浏览器，返回driver
+    driver = None
     if browser == 'chrome':
-        return webdriver.Chrome()
+        driver = webdriver.Chrome()
     elif browser == 'firefox':
-        return webdriver.Firefox()
+        driver = webdriver.Firefox()
     else:
         print('不支持的浏览器')
+
+    # 浏览器最大化
+    if driver:
+        driver.maximize_window()
+
+    return driver
 
 
 class Base:
@@ -26,7 +33,6 @@ class Base:
     def __init__(self, driver):
         # 设置driver
         self.driver = driver
-        self.driver.maximize_window()  # 浏览器窗口最大化
 
     def get(self, url):
         # 请求目标网址
@@ -82,6 +88,12 @@ class Base:
         # 隐式等待
         self.driver.implicitly_wait(seconds)
 
+    def get_element_text(self, locator):
+        # 获取标签文本
+        element = self.find_element(locator)
+        if element:
+            return element.text
+
     def quit(self, seconds=0):
         # 退出浏览器
         time.sleep(seconds)
@@ -93,6 +105,10 @@ if __name__ == '__main__':
 
     base = Base(driver_obj)
     base.get('https://www.baidu.com')
+
+    # news = base.find_element((By.LINK_TEXT, '新闻'))
+    # print(news.text)
+    print(base.get_element_text((By.LINK_TEXT, '新闻')))
 
     # 搜索框输入天气预报
     time.sleep(2)

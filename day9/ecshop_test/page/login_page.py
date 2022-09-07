@@ -2,6 +2,8 @@ from common.base import Base, By
 
 
 class LoginPage(Base):
+    login_url = 'https://ecshop.test2.shopex123.com/user.php'
+
     def input_username(self, username):
         """
         接收用户名输入
