@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ab14046-6a5f-460f-9a46-f9cf34ca030a" name="Changes" comment="login_page">
-      <change afterPath="$PROJECT_DIR$/case/login_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/index_page.py" afterDir="false" />
+    <list default="true" id="9ab14046-6a5f-460f-9a46-f9cf34ca030a" name="Changes" comment="login_case">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/login_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/login_case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/user_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/account.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/index_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/index_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +167,7 @@
       <workItem from="1662258765418" duration="8895000" />
       <workItem from="1662298458708" duration="598000" />
       <workItem from="1662340925925" duration="20000" />
-      <workItem from="1662530244666" duration="5840000" />
+      <workItem from="1662530244666" duration="10063000" />
     </task>
     <task id="LOCAL-00001" summary="框架初始化和common包下的base模块编写">
       <created>1662109975827</created>
@@ -239,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662532222380</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="login_case">
+      <created>1662536449887</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662536449887</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,11 +269,13 @@
     <MESSAGE value="编写百度首页的page模块" />
     <MESSAGE value="数据操作类封装" />
     <MESSAGE value="login_page" />
-    <option name="LAST_COMMIT_MESSAGE" value="login_page" />
+    <MESSAGE value="login_case" />
+    <option name="LAST_COMMIT_MESSAGE" value="login_case" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/autoframe$index_page.coverage" NAME="index_page Coverage Results" MODIFIED="1662260354572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/page" />
     <SUITE FILE_PATH="coverage/ecshop_test$base.coverage" NAME="base Coverage Results" MODIFIED="1662535449107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/ecshop_test$login_case.coverage" NAME="login_case Coverage Results" MODIFIED="1662540435771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/autoframe$base.coverage" NAME="base Coverage Results" MODIFIED="1662259170293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/autoframe$data_operation.coverage" NAME="data_operation Coverage Results" MODIFIED="1662277259116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
   </component>

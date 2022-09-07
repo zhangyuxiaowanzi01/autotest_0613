@@ -42,22 +42,22 @@ class Base:
             print('无效网址')
             print(e)
 
-    def find_element(self, locator, timeout=3):
+    def find_element(self, locator, timeout=1):
         # 定位单个element对象
         # return web_element对象|None
         try:
             wait = WebDriverWait(self.driver, timeout)
-            return wait.until(EC.presence_of_element_located(locator), message='定位不到标签')
+            return wait.until(EC.presence_of_element_located(locator))
         except TimeoutException as e:
-            print(e)
+            print('定位不到标签')
 
-    def find_elements(self, locator, timeout=3):
+    def find_elements(self, locator, timeout=1):
         # 定位多个element对象
         try:
             wait = WebDriverWait(self.driver, timeout)
             return wait.until(EC.presence_of_all_elements_located(locator), message='定位不到标签')
         except TimeoutException as e:
-            print(e)
+            print('定位不到标签')
             return []
 
     def clear(self, locator):

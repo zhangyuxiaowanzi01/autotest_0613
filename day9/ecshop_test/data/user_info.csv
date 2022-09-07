@@ -1,6 +1,0 @@
-title,username,password
-yes,fine1,123465
-username_error,fine0,123456
-password_error,fine1,111111
-password_null,fine1,
-username_null,,123456
