@@ -1,10 +1,10 @@
 import time
-import unittest
-import ddt
-from common.base import get_driver
-from page.login_page import LoginPage
-from page.index_page import IndexPage
-from common.data_operation import DataOperation
+import unittest  # 引入自动化模块
+import ddt  # 使用数据驱动
+from common.base import get_driver  # 使用base基类
+from page.login_page import LoginPage  # 使用login中的模块
+from page.index_page import IndexPage  # 使用首页模块
+from common.data_operation import DataOperation  # 使用读取数据
 
 account_list = DataOperation('account.csv').get_data_to_dict()
 account_list2 = []
