@@ -11,6 +11,7 @@ from selenium.common.exceptions import TimeoutException
 def get_driver(browser='chrome'):
     # 打开浏览器，返回driver
     driver = None
+    '''这边主要做一个判断对不同的浏览器进行兼容(火狐,谷歌)'''
     if browser == 'chrome':
         driver = webdriver.Chrome()
     elif browser == 'firefox':
@@ -36,6 +37,9 @@ class Base:
 
     def get(self, url):
         # 请求目标网址
+        """
+        主要是解决代码的稳定性,进行捕获一下,以防恶意损坏
+        """
         try:
             self.driver.get(url)
         except Exception as e:
@@ -45,6 +49,9 @@ class Base:
     def find_element(self, locator, timeout=1):
         # 定位单个element对象
         # return web_element对象|None
+        """
+        一样的通过try进行捕获
+        """
         try:
             wait = WebDriverWait(self.driver, timeout)
             return wait.until(EC.presence_of_element_located(locator))
@@ -53,6 +60,9 @@ class Base:
 
     def find_elements(self, locator, timeout=1):
         # 定位多个element对象
+        """
+        一样的通过try进行捕获
+        """
         try:
             wait = WebDriverWait(self.driver, timeout)
             return wait.until(EC.presence_of_all_elements_located(locator), message='定位不到标签')
@@ -63,12 +73,16 @@ class Base:
     def clear(self, locator):
         # 输入框清空内容
         element = self.find_element(locator)
+        #  这里主要是进行判断输入框里面是否有东西,如果有直接清空
         if element:
             element.clear()
 
     def get_attribute(self, locator, attr_name):
         # 获取元素属性
         element = self.find_element(locator)
+        """
+        这里可以用try使代码层面跟家的健全,不用使用if,如果恶意会造成500,注意以后能使用try就使,尽量不要使用if语句
+        """
         if element:
             return element.get_attribute(attr_name)
 
